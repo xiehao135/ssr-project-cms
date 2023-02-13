@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article-info",
     "pluralName": "article-infos",
-    "displayName": "articleInfo"
+    "displayName": "articleInfo",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,18 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "articleId": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "default": 1
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "article_infos"
     }
   }
 }
