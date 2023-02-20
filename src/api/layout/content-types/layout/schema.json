@@ -42,6 +42,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::link-list.link-list"
+    },
+    "advertisement_infos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::advertisement-info.advertisement-info"
     }
   }
 }

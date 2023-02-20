@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article-introduction",
     "pluralName": "article-introductions",
-    "displayName": "ArticleIntroduction"
+    "displayName": "ArticleIntroduction",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,10 @@
     },
     "articleId": {
       "type": "integer"
+    },
+    "publishTime": {
+      "type": "datetime",
+      "required": true
     }
   }
 }

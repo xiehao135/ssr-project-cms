@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advertisement_infos",
+  "info": {
+    "singularName": "advertisement-info",
+    "pluralName": "advertisement-infos",
+    "displayName": "advertisementInfo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "jumpUrl": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "imageUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
