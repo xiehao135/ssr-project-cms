@@ -20,7 +20,7 @@ module.exports = createCoreController(
         };
       }
       const { data, meta } = await super.find(ctx);
-      return { data: removeAttrsAndId(removeTime(data)), meta };
+      return { data: removeAttrsAndId(data), meta };
     },
   })
 );

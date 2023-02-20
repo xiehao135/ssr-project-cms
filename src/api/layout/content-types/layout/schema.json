@@ -47,6 +47,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::advertisement-info.advertisement-info"
+    },
+    "author_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::author.author"
     }
   }
 }

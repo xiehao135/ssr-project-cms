@@ -21,9 +21,21 @@
     "articleId": {
       "type": "integer"
     },
-    "publishTime": {
-      "type": "datetime",
-      "required": true
+    "watch": {
+      "type": "integer",
+      "default": 0,
+      "unique": false,
+      "min": 0
+    },
+    "like": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "comment": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
     }
   }
 }
