@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topbar_lists",
+  "info": {
+    "singularName": "topbar-list",
+    "pluralName": "topbar-lists",
+    "displayName": "TopbarList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "textArr": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "topbars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topbar.topbar"
+    }
+  }
+}

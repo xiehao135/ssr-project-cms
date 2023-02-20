@@ -42,6 +42,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::link-list.link-list"
+    },
+    "topbar_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topbar-list.topbar-list"
+    },
+    "category_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category-list.category-list"
     }
   }
 }

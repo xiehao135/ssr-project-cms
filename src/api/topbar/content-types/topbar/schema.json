@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topbars",
+  "info": {
+    "singularName": "topbar",
+    "pluralName": "topbars",
+    "displayName": "Topbar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "subtext": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "blank": {
+      "type": "boolean"
+    }
+  }
+}

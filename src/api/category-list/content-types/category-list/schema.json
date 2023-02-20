@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_lists",
+  "info": {
+    "singularName": "category-list",
+    "pluralName": "category-lists",
+    "displayName": "CategoryList"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "textArr": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    }
+  }
+}
